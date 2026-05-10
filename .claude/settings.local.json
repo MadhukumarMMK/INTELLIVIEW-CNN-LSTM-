@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node server.js)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s -o /dev/null -w \"Python engine /: HTTP %{http_code}\\\\n\" http://localhost:5002/)",
+      "Bash(curl -s http://localhost:5002/)",
+      "Bash(curl -s -o /dev/null -w \"Backend admin/settings: HTTP %{http_code}\\\\n\" http://localhost:5001/api/admin/settings)",
+      "Bash(curl -s -o /dev/null -w \"Frontend: HTTP %{http_code}\\\\n\" http://localhost:3000/)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(npm uninstall *)",
+      "Bash(grep -v \"^$\")"
+    ]
+  }
+}
